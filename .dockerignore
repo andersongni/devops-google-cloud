@@ -1,0 +1,20 @@
+# Ignorar o ambiente virtual do Python
+venv/
+*.venv/
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+
+# Ignorar o banco de dados SQLite local
+# Em um ambiente de produção, o banco de dados seria gerenciado externamente.
+escola.db*
+
+# Ignorar arquivos de configuração do Git
+.git/
+.gitignore
+
+# Ignorar arquivos de configuração de IDEs
+.vscode/
+.idea/
+.vs/

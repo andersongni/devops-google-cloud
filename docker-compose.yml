@@ -1,0 +1,17 @@
+services:
+  app:
+    # Constrói a imagem a partir do Dockerfile no diretório atual (.)
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Define um nome para o contêiner para fácil identificação
+    container_name: devops-google-cloud
+
+    # Mapeia a porta 8000 do host para a porta 8000 do contêiner
+    ports:
+      - "8000:8000"
+
+    # Monta o diretório atual do host no diretório /app do contêiner
+    # Isso permite o live-reload (com --reload) e a persistência do banco de dados SQLite
+    volumes:
+      - .:/app
